@@ -2,7 +2,6 @@ import random
 from sympy import Symbol, diff, lambdify, exp
 import numpy as np
 
-
 def sigmoid(x):
     result = []
     for val in x:
@@ -59,5 +58,3 @@ if __name__ == "__main__":
     # predict
     output, _ = model.forward(x_data)
     print(output)
-
-    loss = model.train(x_data, y_data)
